@@ -1,0 +1,238 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+
+
+#nav-bar{
+  background-color:rgba(0,0,0,0.8);
+  width:100%;
+  top:0;
+  left:0;
+  position:absolute;
+}
+
+h1{
+  /*width:100%;*/
+  padding-left: 17%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  color:#1FBAD6;
+
+}
+
+.bar-box {
+  margin-left:25%;
+}
+.uber-box{
+  margin-top:20px;
+  margin-bottom:30px;
+  padding-right: 35px;
+  text-align: center;
+  list-style-type: none;
+  /*width: 85px;*/
+  float:left;
+  background-color:rgba(0,0,0,0.3);
+
+
+}
+
+:focus {
+  outline: none;
+}
+
+.input { 
+  text-align: center; 
+}
+
+#uber-display{
+  margin-top:150px;
+  text-align: center;
+  margin-left: 30%;
+}
+
+#bars-container{
+  position:relative;
+/*  text-align: center;*/
+  margin: 150px auto;
+}
+
+input#near{
+  margin-top: 10px;
+  width: 200px;
+  height: 25px;
+}
+input#distance{
+  margin-top: 10px;
+  width: 200px;
+  height: 25px;
+}
+input#bar_price{
+  margin-top: 10px;
+  width: 200px;
+  height: 25px;
+}
+
+#display{
+  margin-left: 60px;
+}
+
+#uber-container {
+
+  width: 100%;
+
+}
+
+#results{
+  /*width: 900px;*/
+  width: 100%;
+  margin: 150px auto;
+}
+
+img{
+  margin-top:-200px;
+  float:right;
+  margin-right: 34%;
+  border: solid 1px white;
+  border-radius: 7px;
+}
+
+body {
+/*  background: #27231F;*/
+  background: url("http://i.imgur.com/RzpMdF0.jpg?1") no-repeat center center fixed;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin:-8px;
+  background-size: cover;
+}
+
+.form-container {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  margin:auto;
+}
+
+.prompt {
+  width: 100%;
+  margin-bottom: 5px; 
+  font-size: 18px;
+}
+
+.prompt2 {
+  color: #F5F4F4;
+  font-size: 12px;
+}
+
+.input {
+  width: 100%;
+}
+
+#input-container{
+  text-align: center;
+  padding-left:10%;
+  padding-right:10%;
+}
+
+button#search{
+
+  margin-top: 40px;
+  margin-bottom:30px;
+}
+
+#map{
+  display:none;
+}
+
+button{
+  border: solid 1px #1FBAD6;
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 28px;
+  width:100px;
+  color: white;
+  background-color: #1FBAD6;
+
+}
+
+button:hover{
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+li.uber-car{
+  color:#1FBAD6;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+li.uber-price{
+  color:white;
+}
+
+hr{
+  margin-bottom:80px;
+}
+
+#map{
+  margin-top:100px;
+  height: 600px;
+  width:100%;
+  margin-bottom:-500px;
+}
+
+@media screen and (max-width:980px){
+  .form-container{
+    display:block;
+    width:100%;
+  }
+
+  #input-container{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  img{
+    margin-top: 70px;
+    float:left;
+  }
+
+  .bar-box{
+    margin-left:29%;
+    width:302px;
+    text-align: center;
+  }
+
+  #uber-container{
+    margin-top:400px;
+    margin-left:6%;
+  }
+}
+
+@media screen and (max-width:880px){
+  .bar-box{
+    margin-left: 26%;
+  }
+
+  #uber-container{
+    margin-left:3%;
+  }
+}

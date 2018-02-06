@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BarRouletteApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?v=3&sensor=false' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id = "nav-bar">
+  <h1>Bar Roulette</h1>
+</div>
+
+<div id = 'results'>
+  <div id='bars-container'>
+    <div id='input-container'>
+      
+      <div class="form-container">
+        <p class="prompt">Starting Location</p>
+        <input class="input" type="text" id='near' placeholder='Enter Address'>
+        <p class="prompt2">e.g.(San Francisco or New York, NY or<br> 10 21st St. New York, Ny)</p>
+      </div>
+
+      <div class="form-container">
+        <p class="prompt">Max. Distance Willing to Travel</p>
+        <input class="input" type="text" id='distance' placeholder='Enter Miles'><p class="prompt2">Maximum<br>62 Miles</p>
+      </div>
+
+      <div class="form-container">
+        <p class="prompt">How Expensive Do You Want Your Bar?</p>
+        <input class="input" type="text" id='bar_price' placeholder='Enter Numbers 1-4'>
+        <p class="prompt2">On a Scale of 1-4 e.g.(1 or 3,4 or 1,2,3,4) <br>1 = Cheap 4 = Expensive</p>
+      </div>
+      
+      <button id='search'>Spin to Win</button>
+      
+      <hr>
+
+    </div>
+    <section id='display'></section>
+      
+      <div id = 'uber-container'>
+       <section id='uber-display'></section>
+      </div>
+      
+  </div>
+
+
+</div>
+<div id = 'map'></div>
+
+</body>
+</html>
